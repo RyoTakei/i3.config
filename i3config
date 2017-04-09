@@ -137,7 +137,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # open apps when i3 starts
 exec --no-startup-id i3-msg 'workspace $workspace1; exec /usr/bin/terminator'
-exec --no-startup-id i3-msg 'workspace $workspace2; exec /usr/bin/google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace $workspace2; exec /usr/bin/chromium'
 exec --no-startup-id i3-msg 'workspace $workspace3; exec /usr/bin/waterfox'
 exec --no-startup-id i3-msg 'workspace $workspace4; exec /usr/bin/rox'
 exec --no-startup-id i3-msg 'workspace $workspace3; exec /usr/bin/slack'
@@ -146,7 +146,7 @@ exec --no-startup-id i3-msg 'workspace $workspace6; exec /usr/bin/speedcrunch'
 
 # assign apps
 # assign [class="Terminator"] $workspace1
-assign [class="Google-chrome"] $workspace2
+assign [class="Chromium"] $workspace2
 assign [class="Waterfox"] $workspace3
 assign [class="ROX-Filer"] $workspace4
 assign [class="Slack"] $workspace5
@@ -222,7 +222,7 @@ for_window [class="^.*"] border pixel 1
 # exec_always --no-startup-id /home/solomon/scripts/comptonchecklaunch.py
 # exec_always --no-startup-id /home/solomon/Desktop/wallpapers/change_wallpaper.sh
 
-bindsym $mod+Control+l exec i3lock-fancy -t "Ryo Takei's Laptop\n——— Locked ———"
+bindsym $mod+Control+l exec i3lock-fancy -f Hack -t "Ryo Takei's Laptop\n——— Locked ———" -p
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
